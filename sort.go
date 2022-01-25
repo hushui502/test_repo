@@ -7,7 +7,7 @@ func sort_std(nums []int) {
 	sort.Ints(nums)
 }
 
-
+// no test
 func search_mid(nums []int, target int) int {
 	if len(nums) == 0 {
 		return -1
@@ -16,7 +16,7 @@ func search_mid(nums []int, target int) int {
 	left, right := 0, len(nums)-1
 
 	for left <= right {
-		mid := left + (right - left) >> 1
+		mid := left + (right-left)>>1
 
 		if nums[mid] == target {
 			return mid
